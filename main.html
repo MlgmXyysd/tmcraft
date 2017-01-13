@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="all" />
+<meta name="author" content="MeowCat-MlgmXyysd" />
+<meta name="Copyright" content="MeowCat Studio" />
+<meta name="keywords" content="Minecraft,天幕,天幕服务器,服务器 MC,我的世界">
+<meta name="description" content="Minecraft,天幕,天幕服务器,服务器,MC,我的世界">
+<title>天幕服务器 - 服务器|我的世界|Minecraft|MC|我的世界服务器 - 小喵游戏 - MeowCat Studio</title>
+<!-- 页面设计：MlgmXyysd | 页面制作：MlgmXyysd | 创建：2016-06-02 | 小喵工作室：http://miaocat.890m.com/ -->
+<link href="main.css" rel="stylesheet" type="text/css">
+<script src="main.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+</head>
+	<body>
+			<div id="home" class="header">
+				<div class="container">
+					<div class="logo">
+						<a href="#"><img src="logo.png" title="logo"></a>
+					</div>
+					 <nav class="top-nav">
+						<ul class="top-nav">
+							<li class="active"><a href="#home" class="scroll">主页<span></span></a></li>
+							<li class="page-scroll"><a href="#server" class="scroll">服务器<span></span></a></li>
+							<li class="page-scroll"><a href="#" target="">用户中心<span></span></a></li>
+							<li class="page-scroll"><a href="pay.html" target="_blank">卡密充值<span></span></a></li>
+							<li class="page-scroll"><a href="#bbs" class="scroll">论坛<span></span></a></li>
+							<li class="page-scroll"><a href="#" target="">皮肤站<span></span></a></li>
+							<li class="page-scroll"><a href="http://www.meowcat.tk/" target="_blank">小喵工作室<span></span></a></li>
+						</ul>
+						<a href="#" id="pull"><img src="nav-icon.png" title="menu"></a>
+					</nav>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			 <script>
+			    $(function () {
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			    <div id="top" class="callbacks_container">
+			      <ul class="rslides callbacks callbacks1" id="slider4">
+			        <li id="callbacks1_s0" class="callbacks1_on" style="display: block; transition: opacity 500ms ease-in-out; float: left; position: relative; opacity: 1; z-index: 2;">
+			          <img src="slide1.png" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<a class="btn1" href="http://dwz.cn/xzjava" target="_blank"><span>java6-8下载</span></a>
+			          		<h1><span>现在注册您的账号</span></h1>
+			          		<div class="slide-text">
+			          			<p>采用小喵工作室最新网页登录系统，竭诚为您提供最好的游戏体验</p>
+			          		</div>
+			          		<a class="btn2" href="center" target="_blank"><span>点击注册/登录</span></a>
+			          	</div>
+			          </div>
+			        </li>
+			        <li id="callbacks1_s1" style="display: list-item; transition: opacity 500ms ease-in-out; float: none; position: absolute; opacity: 0; z-index: 1;" class="">
+			          <img src="slide2.png" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<a class="btn1" href="http://dwz.cn/xzjava" target="_blank"><span>java6-8下载</span></a>
+			          		<h1> <span>下载客户端</span></h1>
+			          		<div class="slide-text">
+			          			<p>纯净服专用客户端，无强制性下载要求，客户端加入了优化及实用mod，为您提供稳定的游戏体验</p>
+			          		</div>
+			          		<a class="btn2" href="#" target="_blank"><span>点击下载客户端</span></a>
+			          	</div>
+			          </div>
+			        </li>
+			        <li id="callbacks1_s2" style="display: list-item; transition: opacity 500ms ease-in-out; float: none; position: absolute; opacity: 0; z-index: 1;" class="">
+			          <img src="slide3.png" alt="">
+			          <div class="caption text-center">
+			          	<div class="slide-text-info">
+			          		<a class="btn1" href="http://dwz.cn/xzjava" target="_blank"><span>java6-8下载</span></a>
+			          		<h1> <span>三周目幸运礼包</span></h1>
+			          		<div class="slide-text">
+			          			<p>我们将抽取10名玩家获得礼包兑换码</p>
+			          		</div>
+			          		<a class="btn2" href="#" target=""><span>现在报名</span></a>
+			          	</div>
+			          </div>
+			        </li>
+			          </ul><a href="#" class="callbacks_nav callbacks1_nav prev">上一个</a><a href="#" class="callbacks_nav callbacks1_nav next">下一个</a></div>
+			          	
+			          
+			        
+			      
+			    
+			    <div class="clearfix"> </div>
+			<div id="server" class="services">
+				<div class="container">
+					<div class="services-head text-center">
+						<h3>服务器QQ群</h3>
+						<p>点击图标加群</p>
+					</div>
+					<div class="services-grids">
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon1" href="http://dwz.cn/tmqqqun" target="_blank"><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="http://dwz.cn/tmqqqun" target="_blank">天幕服务器一号群</a></h4>
+								<p>纯净服一号群</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon2" href="#" target=""><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#" target="">二号群暂未开放</a></h4>
+								<p>暂无</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="col-md-4 services-grid">
+							<div class="col-md-3 services-grid-left">
+								<a class="top-icon3" href="#" target""=""><span> </span></a>
+							</div>
+							<div class="col-md-9 services-grid-right">
+								<h4><a href="#" target="" >暂无</a></h4>
+								<p>暂无</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+				</div>
+					<div id="bbs" class="about">
+						<div class="container">
+							<div class="about-head">
+								<h4>论坛</h4>
+								<h5>玩家们共同沟通及探讨告知的地方!</h5>
+								<p></p>
+							</div>
+								<div class="about-grids">
+									<div class="col-md-7 about-grid-left">
+										<span> </span>
+									</div>
+									<div class="col-md-5 about-grid-right">
+										<h5>论坛</h5>
+										<p>论坛使用小喵工作室官方贴吧，小伙伴可以用浏览器收藏论坛哦！</p>
+										<h6>BUG以及建议</h6>
+										<p>讨论过程当中如果服务器有BUG或者建议！也可以举报其他玩家！都可以按照板块分类发帖哦！,</p>
+										<a class="about-btn" href="http://tieba.baidu.com/f?kw=%E5%B0%8F%E5%96%B5%E5%B7%A5%E4%BD%9C%E5%AE%A4" target="_blank">进入论坛</a>
+									</div>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+						</div>
+		<!-- <div id="port" class="portfolio-box-main">
+			<div class="container">
+				<div class="portfolio-head text-center">
+					<h3>玩家真人照</h3>
+					<span>用自己胆量秀出自己，前往论坛发帖获得福利！</span>
+					<p>"我们会更新玩家的真人照以放出给大家"</p>
+				</div>
+			</div>
+		<div class="portfolio portfolio-box">
+         <div class="portfolio-main">
+					<script type="text/javascript">
+						$(function () {
+							var filterList = {
+								init: function () {
+									$('#portfoliolist').mixitup({
+										targetSelector: '.portfolio',
+										filterSelector: '.filter',
+										effects: ['fade'],
+										easing: 'snap',
+										onMixEnd: filterList.hoverEffect()
+									});				
+								},
+								hoverEffect: function () {
+									$('#portfoliolist .portfolio').hover(
+										function () {
+											$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+											$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+										},
+										function () {
+											$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+											$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+										}		
+									);				
+								}
+							};
+							filterList.init();
+						});	
+					</script>
+					<ul id="filters" class="clearfix">
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="space.png"><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>暂无玩家照片</h3>
+						     				<span>等待中...... </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="space.png"><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>暂无玩家照片</h3>
+						     				<span>等待中...... </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="space.png"><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>暂无玩家照片</h3>
+						     				<span>等待中...... </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a data-toggle="modal" data-target=".bs-example-modal-md" href="#" class="b-link-stripe b-animate-go  thickbox">
+						     <img class="p-img" src="space.png"><div class="b-wrapper">
+						     	<h2 class="b-animate b-from-left    b-delay03 ">
+						     		<div class="animate-head">
+						     			<div class="animate-head-left">
+						     				<h3>暂无玩家照片</h3>
+						     				<span>等待中...... </span>
+						     			</div>
+						     			<div class="animate-head-right">
+						     				<span><i class="fa fa-search-plus"> </i></span>
+						     			</div>
+						     			<div class="clearfix"> </div>
+						     		</div>
+						     	</h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="clearfix"> </div>	
+					<a class="more-ports text-center" href="#"><span> </span></a>
+				</div>
+		</div>
+		</div> -->
+		<div class="clearfix"> </div>
+		</div>
+         <div id="contact" class="contact">
+         	<div class="container">
+         		<div class="contact-head text-center">
+         			<h3></h3>
+         			<span></span>
+         			<p></p>
+         		</div>
+         		<div class="contact-grids">
+         			<div class="col-md-7 contact-left">
+         				
+         			</div>
+         			<div class="clearfix"> </div>
+         		</div>
+         	</div>
+         </div>
+		 <audio src="menu3.wav" loop="loop" autoplay=""></audio>
+		<div class="mod_footer">
+		<div class="footermenu">
+				<a href="http://www.mcskins.ml/" rel="nofollow" target="_blank">小喵MC皮肤站</a> | <a href="http://www.meowcat.tk/" rel="nofollow" target="_blank">小喵工作室</a> | <a href="http://www.meowcat.890m.com/TCS/" rel="nofollow" target="_blank">贴吧云签到</a> | <a href="http://api.hostinger.com.hk/redir/12869740" rel="nofollow" target="_blank">免费空间1</a> | <a href="http://api.hostinger.com.hk/redir/11841507" rel="nofollow" target="_blank">免费空间2</a> | <a href="http://dwz.cn/tmqqqun" rel="nofollow" target="_blank">天幕服务器</a> | <a href="http://shang.qq.com/wpa/qunwpa?idkey=9dd3e893b3b037ac7aad6c2b46135551817f24a8386d2f87c3b14e7e82bf3964" rel="nofollow" target="_blank">小喵工作室QQ群</a>
+			</div>
+			<div class="copyrighten">Copyright © 2014 - <span><script>document.write(new Date().getFullYear());</script></span> <a target="_blank" href="http://www.meowcat.tk/" rel="nofollow">MeowCat Studio</a> Powered by MlgmXyysd All Rights Reserved.</div>
+			<div class="copyrightzh"><a target="_blank" href="http://www.meowcat.tk/" rel="nofollow">小喵工作室</a> & <a href="http://dwz.cn/tmqqqun" rel="nofollow" target="_blank">天幕服务器</a> 版权所有</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+    function form_top(){
+    document.write('<div id="form_top"><a href="#home" title="回到顶部"  class="scroll"><div class="top_img"></div></a></div>')
+    }
+    form_top();
+    </script>
+</body>
+</html>
