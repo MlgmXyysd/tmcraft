@@ -12,6 +12,24 @@
 <link href="index.css" rel="stylesheet">
 <style type="text/css">body{cursor:url(c1.ico),auto}
 body:active{cursor:url(c2.ico),auto}</style>
+<script language="javascript">
+			function check_mobile(){var ua = navigator.userAgent;ua = ua ? ua.toLowerCase().replace(/-/g, "") : "";
+				if (ua.match(/(Android|iPhone|iPod)/i)){location.href = "main.html";}
+				if (ua.match(/(U;)/i)){if (ua.match(/(Adr|iPh|iPd)/i)){location.href = "main.html";}}//UC Browser
+			}
+			check_mobile();
+			function hand_url(){
+			var searchString = location.search;
+			var pos = searchString.indexOf ("?");
+			if (pos == 0){
+				var thislocation = document.location.href;
+				var urls = thislocation.split("?");
+				var thisurl = urls[0];
+				window.location.href = thisurl;
+			}
+			}
+			hand_url();
+		</script>
 </head>
 <body>
 <i class="do-you-even-flexbox"></i>

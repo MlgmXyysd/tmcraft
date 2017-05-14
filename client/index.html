@@ -41,8 +41,38 @@ return false;
 }
 document.oncontextmenu = nocontextmenu;
 document.onmousedown = norightclick;</script>
+<script>function EventOper(){  
+    if(event.keyCode==8){  
+        event.keyCode=0;  
+        event.returnValue=false;  
+    }  
+    if(event.keyCode==13){  
+        event.keyCode=0;  
+        event.returnValue=false;  
+    }  
+    if(event.ctrlKey){        
+        event.returnValue=false;  
+    }  
+  
+    if((event.altKey)&&(event.keyCode==78)){          
+        event.returnValue=false;  
+    }  
+    if((event.shiftKey)&&(event.keyCode==78)){        
+        event.returnValue=false;  
+    }  
+}  
+function rightKey(){  
+    if(event.button==2){  
+        event.returnValue=false;   
+    }  
+	if(event.button==1){  
+        event.returnValue=false;   
+    }  
+}  
+document.onkeydown=EventOper;  
+document.onmousedown=rightKey;  </script>
 	</head>
-	<body style="overflow:-Scroll;overflow-y:hidden;overflow-x:hidden" oncontextmenu="self.event.returnValue=false" onselectstart="return false">
+	<body style="overflow:-Scroll;overflow-y:hidden;overflow-x:hidden" ondragstart="return false" oncontextmenu="return false;self.event.returnValue=false;" leftMargin="0" topMargin="0" oncopy="return false;" oncut="return false;" onselectstart="return false">
 	<script language="javascript">for(i in document.images)document.images[i].ondragstart=imgdragstart;  </script> 
 	<img src="event.png" height="450" width="800" />
 	</body>
