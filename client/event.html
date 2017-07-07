@@ -370,6 +370,34 @@ input[type="button"].btn-block {
   width: 100%;
 }
 </style>
+<script language="JavaScript">
+var rand1 = 0;
+var useRand = 0;
+images = new Array;
+images[1] = new Image();
+images[1].src = "1.jpg";
+images[2] = new Image();
+images[2].src = "2.jpg";
+images[3] = new Image();
+images[3].src = "3.jpg";
+images[4] = new Image();
+images[4].src = "event.png";
+images[5] = new Image();
+images[5].src = "4.jpg";
+images[6] = new Image();
+images[6].src = "5.jpg";
+images[7] = new Image();
+images[7].src = "6.jpg";
+function RandomImage() {
+var imgnum = images.length - 1;
+do {
+var randnum = Math.random();
+rand1 = Math.round((imgnum - 1) * randnum) + 1;
+} while (rand1 == useRand);
+useRand = rand1;
+document.img.src = images[useRand].src;
+}
+</script>
 		<script language="javascript">function imgdragstart(){return false;} </script>
 		<script language="javascript">document.onmousedown = function() {
     return false;
@@ -433,9 +461,9 @@ function rightKey(){
 document.onkeydown=EventOper;  
 document.onmousedown=rightKey;  </script>
 	</head>
-	<body style="overflow:-Scroll;overflow-y:hidden;overflow-x:hidden" ondragstart="return false" oncontextmenu="return false;self.event.returnValue=false;" leftMargin="0" topMargin="0" oncopy="return false;" oncut="return false;" onselectstart="return false">
+	<body style="overflow:-Scroll;overflow-y:hidden;overflow-x:hidden" onLoad="RandomImage();" ondragstart="return false" oncontextmenu="return false;self.event.returnValue=false;" leftMargin="0" topMargin="0" oncopy="return false;" oncut="return false;" onselectstart="return false">
 	<script language="text/javascript">for(i in document.images)document.images[i].ondragstart=imgdragstart;  </script> 
-	<div style="z-index:999;position:absolute;overflow:hidden;top:250px;left:100px;"><button class="btn btn-primary" onClick="window.open('http://www.skymucraft.tk/story.html')">查看服务器故事</button></div>
-	<img src="event.png" height="450" width="800" />
+	<div style="z-index:999;position:absolute;overflow:hidden;top:250px;left:100px;"><button class="btn btn-info" onClick="window.open('http://www.skymucraft.tk/story.html')">查看服务器故事</button></div>
+	<img name="img" src="" height="450" width="800" />
 	</body>
 </html>
